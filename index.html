@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPE NU 32</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://scontent.fbkk4-4.fna.fbcdn.net/v/t39.30808-6/551433488_122190527228300403_6074458991507762938_n.jpg?_nc_cat=100&_nc_cb=99be929b-f3b7c874&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEkFs2jbll1nWxiyjbpq4Pc0QYs7qoSr_nRBizuqhKv-c4rzHNnQ2SC9ZlEAZUgfLDUKRTYAWyrQuWpL7Z3ap0q&_nc_ohc=GGfwdQ811VoQ7kNvwH-7uzv&_nc_oc=AdkwjxHpleEsncNMFuB06Y5wsh7nmtAOSESRGtDVnB209phLqsWo8PRQ7oQbHha9YFw&_nc_zt=23&_nc_ht=scontent.fbkk4-4.fna&_nc_gid=l9F9Oe1nf5GLzfZcN3-Beg&oh=00_AfpAbBO2oCAtvTCQhFlmg1SI9mMTcb9wZPh9GF_UUpdwhw&oe=6961C6B4">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* สไตล์เพิ่มเติมสำหรับสีที่เลือก */
+        .color-dot.active {
+            ring: 4px solid #111827;
+            transform: scale(1.1);
+        }
+        .size-btn.active {
+            background-color: #111827;
+            color: white;
+            border-color: #111827;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300">
+
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
+                    <!-- <span class="text-white font-bold text-xl">D</span> -->
+                    <img src="https://scontent.fbkk4-4.fna.fbcdn.net/v/t39.30808-6/551433488_122190527228300403_6074458991507762938_n.jpg?_nc_cat=100&_nc_cb=99be929b-f3b7c874&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEkFs2jbll1nWxiyjbpq4Pc0QYs7qoSr_nRBizuqhKv-c4rzHNnQ2SC9ZlEAZUgfLDUKRTYAWyrQuWpL7Z3ap0q&_nc_ohc=GGfwdQ811VoQ7kNvwH-7uzv&_nc_oc=AdkwjxHpleEsncNMFuB06Y5wsh7nmtAOSESRGtDVnB209phLqsWo8PRQ7oQbHha9YFw&_nc_zt=23&_nc_ht=scontent.fbkk4-4.fna&_nc_gid=T8qPLUZygl4jgTSuROqATw&oh=00_AfpMJ4x9kMUTmOjSY4jC0-NSW65EVixjY9CYvmoxSvYn7g&oe=6961C6B4" alt="">
+                </div>
+                <div>
+                    <div class="text-[10px] leading-tight text-gray-600">COMPUTER ENGINEERING</div>
+                    <div class="text-[10px] leading-tight text-gray-600">NARESUAN UNIVERSITY</div>
+                </div>
+            </div>
+            <!-- <nav class="hidden md:flex gap-8">
+                <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Home</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Products</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">About</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 font-medium">Contact</a>
+            </nav> -->
+            <div class="flex gap-4">
+                <i data-lucide="facebook" class="w-5 h-5 cursor-pointer hover:text-blue-500"><a href="https://web.facebook.com/profile.php?id=61559012107684"></a></i>
+                <i data-lucide="instagram" class="w-5 h-5 cursor-pointer hover:text-blue-500"><a href="https://www.instagram.com/cpe_nu/"></a></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid md:grid-cols-2 gap-12">
+            
+            <div class="relative">
+                <div class="bg-gradient-to-br from-gray-200 to-gray-400 rounded-3xl p-8 relative overflow-hidden min-h-[500px]">
+                    <div class="absolute inset-0 opacity-20 pointer-events-none">
+                        <div class="absolute top-0 left-0 w-32 h-full bg-white transform -rotate-45 -translate-x-16"></div>
+                        <div class="absolute top-0 left-24 w-32 h-full bg-white transform -rotate-45"></div>
+                        
+                    </div>
+
+                    <!-- <div class="relative z-10">
+                        <h1 class="text-6xl md:text-7xl font-black text-gray-900 leading-[0.8]">
+                            CPE<br/>
+                            <span class="text-7xl md:text-8xl">32</span><br/>
+                            <span class="text-5xl md:text-6xl"></span>
+                        </h1>
+                    </div> -->
+                    <div class="relative z-20 flex items-center justify-center pt-10">
+                        
+                        <div id="hoodie-preview" class="w-150 h-200 bg-gray-100 rounded-3xl shadow-2xl transform hover:scale-105 transition-all duration-500 flex items-center justify-center">
+                            <img class="w-100 h-100  rounded-3xl" src="https://scontent.fbkk4-4.fna.fbcdn.net/v/t39.30808-6/600298108_122200346642300403_800246580232428866_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=108&_nc_cb=99be929b-f3b7c874&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG6c2fJvqDcmCfqUbkFK8XCvBvpC5LKmSS8G-kLksqZJOSFekZ890hWH5tpy7fp4GsEIig3h4_XhyQGWbnr6jn6&_nc_ohc=cpV627fxwK4Q7kNvwFxB4Yo&_nc_oc=AdmzGDZ7wv77UmxsJKP_DKeu7ZK-QkUfNGHr-rRgNL2du-GC959axauEBjyXcbCGFq0&_nc_zt=23&_nc_ht=scontent.fbkk4-4.fna&_nc_gid=pS9F3Kt8Yif1-yaCyW1SlA&oh=00_AfpXFV727pNhy21XNQNvEfrvCFyZ-OtezjoGPVwBbuPpug&oe=6961CB5D" alt="">
+                        </div>
+                    </div>
+
+                    <!-- <div class="absolute bottom-8 right-8 flex flex-col gap-3 z-30">
+                        <button class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-gray-100 transition">
+                            <i data-lucide="maximize-2" class="w-5 h-5 text-gray-700"></i>
+                        </button>
+                        <button class="w-12 h-12 bg-white rounded-xl shadow-lg flex items-center justify-center hover:bg-gray-100 transition">
+                            <i data-lucide="rotate-ccw" class="w-5 h-5 text-gray-700"></i>
+                        </button>
+                    </div> -->
+
+                    <!-- <div class="absolute bottom-8 left-8 bg-gray-900 text-white px-4 py-2 text-xs rounded font-mono">
+                        Design by dled35_
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-center">
+                <div class="mb-6">
+                    <!-- <span class="inline-block bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider">
+                        MODERN FIT
+                    </span> -->
+                    <h1 class="text-6xl font-bold text-gray-900 mb-3">CPE NU 32</h1>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">PREORDER NOW</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        📣 Pre order เสื้อสาขาวิศวกรรมคอมพิวเตอร์ได้แล้ววันนี้
+<br>✨ ไซส์ SSS ถึง 2XL ราคา​ 295​ บาท
+<br>✨ ไซส์ 3XL ถึง 7XL ราคา​ 325​ บาท
+<br>สั่งได้ตั้งแต่วันนี้จนถึงวันที่ 8 มกราคม 2569 เวลา 23.59 น.
+                    </p>
+                    <!-- <div class="flex items-baseline gap-4 mb-8"> -->
+                        <!-- <span class="text-4xl font-bold text-gray-900">฿295🔥</span> -->
+                        <!-- <span class="text-2xl text-gray-400 line-through">฿1,290</span>
+                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">-31%</span> -->
+                    <!-- </div> -->
+                     
+                </div>
+
+                <!-- <div class="mb-6">
+                    <label class="block text-sm font-semibold text-gray-900 mb-3">
+                        Size: <span id="current-size" class="font-normal text-gray-600">M</span>
+                    </label>
+                    <div class="flex gap-3">
+                        <button onclick="setSize('S')" class="size-btn w-14 h-14 rounded-lg border-2 border-gray-300 bg-white font-semibold hover:border-gray-400 transition">S</button>
+                        <button onclick="setSize('M')" class="size-btn active w-14 h-14 rounded-lg border-2 border-gray-300 bg-white font-semibold hover:border-gray-400 transition">M</button>
+                        <button onclick="setSize('L')" class="size-btn w-14 h-14 rounded-lg border-2 border-gray-300 bg-white font-semibold hover:border-gray-400 transition">L</button>
+                        <button onclick="setSize('XL')" class="size-btn w-14 h-14 rounded-lg border-2 border-gray-300 bg-white font-semibold hover:border-gray-400 transition">XL</button>
+                    </div>
+                </div> -->
+
+                <!-- <div class="mb-8">
+                    <label class="block text-sm font-semibold text-gray-900 mb-3">
+                        Color: <span id="current-color" class="font-normal text-gray-600 capitalize">White</span>
+                    </label>
+                    <div class="flex gap-3">
+                        <button onclick="setColor('white', '#F5F5F5')" class="color-dot active w-10 h-10 rounded-full border-2 border-white shadow-sm" style="background-color: #F5F5F5;"></button>
+                        <button onclick="setColor('black', '#1A1A1A')" class="color-dot w-10 h-10 rounded-full border-2 border-white shadow-sm" style="background-color: #1A1A1A;"></button>
+                        <button onclick="setColor('navy', '#1E3A5F')" class="color-dot w-10 h-10 rounded-full border-2 border-white shadow-sm" style="background-color: #1E3A5F;"></button>
+                        <button onclick="setColor('gray', '#6B7280')" class="color-dot w-10 h-10 rounded-full border-2 border-white shadow-sm" style="background-color: #6B7280;"></button>
+                    </div>
+                </div> -->
+
+                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                    <!-- <div class="flex items-center border-2 border-gray-300 rounded-xl overflow-hidden bg-white">
+                        <button onclick="updateQty(-1)" class="px-5 py-3 text-xl font-bold hover:bg-gray-100">-</button>
+                        <span id="qty-display" class="px-6 py-3 text-lg font-bold min-w-[60px] text-center">1</span>
+                        <button onclick="updateQty(1)" class="px-5 py-3 text-xl font-bold hover:bg-gray-100">+</button>
+                    </div> -->
+                    <a href="https://forms.gle/WhvZsvhcAwnPwmuP7" class="flex-1 bg-gray-900 text-white rounded-xl font-bold hover:bg-gray-800 transition flex items-center justify-center gap-3 py-4">
+                        <i data-lucide="shopping-cart" class="w-5 h-5"></i>
+                        BUY NOW
+                    </a>
+                </div>
+
+                <!-- <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div class="bg-white/50 p-4 rounded-xl border border-gray-200">
+                        <div class="font-bold text-gray-900 mb-1">High Quality Fabric</div>
+                        <div class="text-gray-600">100% Premium Cotton</div>
+                    </div>
+                    <div class="bg-white/50 p-4 rounded-xl border border-gray-200">
+                        <div class="font-bold text-gray-900 mb-1">Modern Fit</div>
+                        <div class="text-gray-600">Tailored for Comfort</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-gray-500 py-10 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p>&copy; 2025 CPE NU 68. All rights reserved.</p>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // เริ่มต้น Icons
+        lucide.createIcons();
+
+        // ฟังก์ชันเปลี่ยนขนาด
+        function setSize(size) {
+            document.getElementById('current-size').innerText = size;
+            document.querySelectorAll('.size-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if(btn.innerText === size) btn.classList.add('active');
+            });
+        }
+
+        // ฟังก์ชันเปลี่ยนสี
+        function setColor(colorName, colorCode) {
+            document.getElementById('current-color').innerText = colorName;
+            const preview = document.getElementById('hoodie-preview');
+            preview.style.backgroundColor = colorCode;
+            
+            // เปลี่ยนสี icon ตามพื้นหลัง
+            const icon = preview.querySelector('i');
+            icon.style.color = (colorName === 'black' || colorName === 'navy') ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.1)';
+
+            document.querySelectorAll('.color-dot').forEach(dot => {
+                dot.classList.remove('active');
+                if(dot.style.backgroundColor === colorCode || dot.getAttribute('onclick').includes(colorName)) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        // ฟังก์ชันเพิ่ม/ลดจำนวน
+        let qty = 1;
+        function updateQty(diff) {
+            qty = Math.max(1, qty + diff);
+            document.getElementById('qty-display').innerText = qty;
+        }
+    </script>
+</body>
+</html>
